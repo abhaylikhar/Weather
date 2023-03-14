@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <form class="container">
+
+        <div class="search-section">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" required placeholder="Search for places...">
+            </div>
+
+            <div class="image-section">
+                <img id="icon1">
+            </div>
+
+            <div class="time-section">
+                <h1 id="degree"></h1>
+                <p id="city"></p>
+                <p id="time"></p>
+                <!-- <p>Monday, <span style="color: gray;">16:00</span></p> -->
+            </div>
+
+            <div class="rain-section">
+                <span class="flex">
+                    <img id="icon">
+                    <p id="weather"></p>
+                </span>
+                <span class="flex">
+                    <img src="./assets/images/rain.png">
+                    <p id="rain"></p>
+                </span>
+            </div>
+
+            <div id="city-img" class="city-images">
+                <p id="city-name"></p>
+            </div>
+
+        </div>
+
+
+        <div class="details-section">
+
+            <nav class="flex">
+                <span>
+                    <ul class="nav-links flex">
+                        <li><a href="#">Today</a></li>
+                        <li><a href="#">Week</a></li>
+                    </ul>
+                </span>
+                <span class="flex">
+                    <a  href="#" class="celcius">&#176;C</a>
+                    <a href="#" class="celcius" id="fahrenite">&#176;F</a>
+                    <div class="profile-pic"></div>
+                </span>
+            </nav>
+
+            <div class="daily-section flex">
+                <div class="daily-cart">
+                    <p>Sun</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+                <div class="daily-cart">
+                    <p>mon</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+                <div class="daily-cart">
+                    <p>Tue</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+                <div class="daily-cart">
+                    <p>Wed</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+                <div class="daily-cart">
+                    <p>Thu</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+                <div class="daily-cart">
+                    <p>Fri</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+                <div class="daily-cart">
+                    <p>Sat</p>
+                    <img src="./assets/images/sun-top-and-natural-photos-23.png">
+                    <p>15&#176;</p>
+                </div>
+            </div>
+
+            <h2>Today's highlights</h2>
+
+            <div class="highlight-section">
+                <div class="highlight-cart">
+                    <p>UV Index</p>
+                    <h3 id="UV"></h3>
+                    <p></p>
+                </div>
+                <div class="highlight-cart">
+                    <p>Wind Status</p>
+                    <h3 id="wind_kph"></h3>
+                    <p>WSW</p>
+                </div>
+                <div class="highlight-cart">
+                    <p>Latitude/Longitude</p>
+                    <h3 id="longitude"></h3>
+                    <p></p>
+                </div>
+
+                <div class="highlight-cart">
+                    <p>Humidity</p>
+                    <h3 id="humidity"></h3>
+                    <p id="humidity-status"></p>
+                </div>
+                <div class="highlight-cart">
+                    <p>Visibility</p>
+                    <h3 id="visibility"></h3>
+                    <p id="visibility-status"></p>
+                </div>
+                <div class="highlight-cart">
+                    <p>Air Quality</p>
+                    <h3>105</h3>
+                    <p>Unhealthy</p>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+   
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/e5b8e6f1e4.js" crossorigin="anonymous"></script>
+</body>
+</html>
